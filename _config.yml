@@ -10,8 +10,8 @@
 # title appears in the header
 title: World Models Workshop
 # description and keywords for meta tags
-description: "World Models Workshop"
-keywords: "world models, reinforcement learning, machine learning, workshop"
+description: "Workshop on Model-Based Reinforcement Learning and Generative World Models at RLC 2026"
+keywords: "model-based reinforcement learning, generative world models, embodied AI, MBRL, policy learning, sim-to-real, RLC 2026"
 
 # author settings for cc-by, appears in the footer
 author: worldmodels-rlc
