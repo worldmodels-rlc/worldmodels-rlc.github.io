@@ -1,0 +1,304 @@
+% RLJ main.tex Version 2026.1
+
+\documentclass[10pt]{article} % For LaTeX2e
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% AUTHOR: Select ONE option:
+%      [accepted]{rlj} --> for camera ready (after peer review, if accepted)
+%      {rlj}           --> for submission
+%      [preprint]{rlj} --> to de-anonymize and remove references to RLJ/RLC
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{rlj}           % Should be uncommented for submission
+%\usepackage[accepted]{rlj} % Should be uncommented for the camera-ready
+%\usepackage[preprint]{rlj} % Should be uncommented for preprint versions
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% WARNING: The following packages are already included in the
+%          rlj.sty style file:
+%
+%  1. fancyhdr  - For controlling header/footers
+%  2. natbib    - For formatting the bibliography
+%  3. enumitem  - To customize the appearance of lists
+%  4. fontenc (with option [T1]) - Allows for proper hyphenation and accents
+%  5. times     - Times new roman font
+%  6. ragged2e  - Used to justify text
+%  7. tcolorbox - Used to create boxes on cover page
+%  8. hyperref  - Configures hyperlinks throughout (e.g., links to references)
+%  9. xcolor    - Used to define custom colors for links and boxes
+%  10. amsmath  - Not used, but conflicts with lineno, so we include (and patch) it for authors
+%  11. etoolbox - Included in the amsmath + lineno patch
+%  12. lineno   - For adding line numbers when in submission
+%
+% You do not need to include them again in your main.tex.
+% Including them again may lead to conflicts or compilation errors.
+% Additionally, avoid loading packages that might conflict with these.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Recommended (but not required) packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amssymb}            % Defines common symbols like \mathbb R
+\usepackage{mathtools}          % Extends amsmath, providing common math tools
+\usepackage{mathrsfs}           % Enables \mathscr, which can work in cases that \mathcal does not
+%\mathtoolsset{showonlyrefs}     % Only number equations that are referenced (optional)
+\usepackage{graphicx}           % For including images
+\usepackage{subcaption}         % Allows for the use of subfigures and subcaptions
+\usepackage[space]{grffile}     % For spaces in image names
+\usepackage{url}                % For displaying URLs
+\usepackage{lipsum}             % For placeholder text
+
+
+\usepackage{booktabs} % professional-quality tables
+\usepackage{amsfonts} % blackboard math symbols
+\usepackage{nicefrac} % compact symbols for 1/2, etc.
+\usepackage{microtype} % microtypography
+\usepackage{makecell}
+\usepackage{titlesec}
+\usepackage{wrapfig}
+
+% Format: \titlespacing*{<command>}{<left>}{<before-sep>}{<after-sep>}
+\titlespacing*{\section}{0pt}{1.2ex plus 1ex minus .2ex}{0.5ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{1ex plus 1ex minus .2ex}{0.5ex plus .2ex}
+
+
+\newcommand{\algorithmautorefname}{Alg.}
+\renewcommand{\figureautorefname}{Fig.}
+\renewcommand{\sectionautorefname}{Sec.}
+\renewcommand{\subsectionautorefname}{Subsec.}
+\renewcommand{\subsubsectionautorefname}{Subsubsec.}
+\renewcommand{\equationautorefname}{Eq.}
+\newcommand{\propref}[1]{\hyperref[#1]{Prop.~\ref*{#1}}}
+\newcommand{\assumref}[1]{\hyperref[#1]{Assum.~\ref*{#1}}}
+\newcommand{\corref}[1]{\hyperref[#1]{Cor.~\ref*{#1}}}
+\newcommand{\lemref}[1]{\hyperref[#1]{Lem.~\ref*{#1}}}
+\newcommand{\aref}[1]{\hyperref[#1]{App.~\ref*{#1}}}
+\newcommand{\defref}[1]{\hyperref[#1]{Def.~\ref*{#1}}}
+\newcommand{\proofref}[1]{\hyperref[#1]{Proof~\ref*{#1}}}
+\setlist[itemize]{leftmargin=3em}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% AUTHOR: Fill in the following meta-data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Enter the title of your paper:
+\title{Model-Based Reinforcement Learning in the Era of Generative World Models}
+
+% The "running title" will be displayed in the header on every-other page.
+% It is typically either the same as the title or a shorter version of the title.
+% Enter your running title here:
+\setrunningtitle{MBRL-GWM Workshop at RLC 2026}
+
+% WARNING: Authors must not appear in the submitted version. They should be hidden
+% as long as the rlj package is used without the [accepted] or [preprint] options.
+% Non-anonymous submissions will be rejected without review.
+
+% Enter the author names below. 
+% NOTE: Denote affiliations using superscripts as in the provided example.
+% NOTE: Use \textscript{1,2,3} instead of $^{1,2,3}$.
+% - Failure to do so will cause affiliation superscripts to appear on the cover page for camera-ready and preprint versions.
+\author{}
+
+% NOTE: For camera-ready and preprint versions, the cover page includes author names but not affiliations.
+% It automatically removes the superscripts for affiliations.
+% If the automatic process breaks (e.g., if an author name should include a superscript), you can manually define the author string to appear on the cover page by uncommenting the following line.
+%\coverPageAuthor{Marlos C. Machado, Philip S. Thomas, Lorem Ipsum}
+
+% Author emails, which can be clustered if they have shared endings as in this example
+\emails{mohamad.danesh@mail.mcgill.ca}
+
+% Author affiliations, in the order the occur
+% The inclusion of state/province, etc. is optional.
+% The inclusion of multiple affiliations is optional.
+%   - List multiple affiliations with comma-separated numbers as in the example.
+\affiliations{}
+
+\contribution{
+    % Contribution
+    Proposing a dedicated workshop venue to bridge model-based reinforcement learning theory with large-scale generative world models for embodied AI.
+    }
+    {
+    % Context:
+    While previous venues often treat generative modeling and model-based reinforcement learning as separate tracks \citep{bharadhwaj2025physworldmodels, worldmodels_iclr2025_workshop}, this workshop explicitly targets their intersection for policy learning and active control.
+    }
+
+\contribution{
+    % Contribution
+    Assembling a diverse lineup of speakers from academia and industry to address specific model-based reinforcement learning challenges, including compounding errors, synthetic data generation, and control-relevant representations.
+    }
+    {
+    % Caveat:
+    Prior MBRL workshops have largely focused on generative architectures evaluated purely on video generation fidelity \citep{bharadhwaj2025physworldmodels, worldmodels_iclr2025_workshop}. This workshop uniquely targets their overlap, requiring speakers to address both the theoretical MBRL challenges---compounding errors, policy extraction, and sample efficiency---and the high-dimensional representational capabilities of modern generative architectures.
+    }
+
+\contribution{
+    % Contribution
+    Fostering research collaborations by bringing together research communities from model-based reinforcement learning, embodied AI, and generative modeling to establish unified directions for embodied foundation models.
+    }
+    {
+    % Caveat:
+    Providing dedicated spaces for cross-community discussion and collaboration will play a significant role in developing new methods and insights that combine generative world model principles with model-based reinforcement learning to build more capable embodied systems.
+    }
+
+\keywords{Model-Based Reinforcement Learning, Generative World Models, Embodied AI, Policy Learning, Sim-to-Real Transfer, Synthetic Data.}
+
+\summary{Realizing the promise of embodied AI---autonomous systems that must perceive, reason, and act within the physical world---requires reinforcement learning agents capable of reasoning about complex environments with high sample efficiency. One solution to address these sample efficiency concerns is model-based reinforcement learning (MBRL), which offers a theoretical framework for data-efficient planning; however, these algorithms typically rely on dynamical models that do not scale to high-dimensional, noisy embodied environments. Large-scale generative world models, in contrast, often capture these high-dimensional world transitions, but carry weak theoretical guarantees for use as planning models in an MBRL algorithm---motivating the central question of this workshop: how can we bridge the gap between the theoretical foundations of MBRL and the scalable transition dynamics of generative world models?
+
+This proposed workshop posits that the convergence of large-scale generative world models and MBRL policy learning is the key to solving these challenges. We focus on how next-generation world models can serve as the backbone for generalist embodied agents, enabling zero-shot planning, effective offline policy optimization, and robust sim-to-real transfer. By bringing together experts across academia and industry, the workshop aims to discuss ongoing research on leveraging generative models to address the compounding error problem, utilize synthetic data for embodied pre-training, and design action-aware representations for MBRL.
+}
+
+
+\begin{document}
+
+\makeCover
+\maketitle
+
+
+
+\begin{abstract}
+Model-based reinforcement learning (MBRL) offers a principled framework for data-efficient policy learning and planning. However, the practical success of MBRL has been historically bottlenecked by the difficulty of learning scalable, accurate dynamics models. Traditional models struggle with high-dimensional, noisy state spaces and suffer from compounding transition errors, leading to poor policy optimization. This workshop focuses on the next frontier of MBRL: learning robust policies from highly capable, large-scale learned simulators. By utilizing recent advances in generative world models---large-scale neural models trained to synthesize plausible future observations by learning a distribution over environment transitions from high-dimensional sensory inputs---as a mechanism for high-fidelity experience generation, we can unlock new paradigms for robust dynamics modeling, zero-shot planning, and offline policy optimization within MBRL. Finally, we explore complex, noisy domains like embodied AI as practical testbeds for these algorithmic advancements. 
+The workshop will gather experts to discuss how to solve compounding errors in transition dynamics, leverage synthetic experience for RL pre-training, and reliably extract robust policies from learned models.
+\end{abstract}
+
+\section{Introduction and Motivation}
+
+Model-based reinforcement learning (MBRL) algorithms offer a means of improving sample efficiency during the learning process. These algorithms use collected experience to learn transition models, enabling control policies to plan and improve from limited environment interaction. Many of these algorithms provide theoretically grounded reasons to decouple sample efficiency from costly environment interactions, enabling robust policy learning and value estimation entirely from simulated experience \citep{ha2018world, dyna}. MBRL methods have consequently seen successful application across a variety of fields: robotics, autonomous driving, and healthcare.
+
+
+However, realizing this promise requires dynamics models of exceptional fidelity. Traditional learned transition dynamics suffer from ``compounding errors'' and struggle to scale to unstructured observation spaces, often leading to catastrophic policy failure during long-horizon planning or optimization \citep{chua2018deep}. Consequently, scaling MBRL algorithms to complex continuous control problems remains a foundational challenge in the reinforcement learning (RL) community.
+
+
+This workshop explores how we can overcome these historical limitations to advance the core mechanisms of MBRL: planning and policy extraction. To do this, we examine the integration of high-capacity \textit{Generative World Models} into the MBRL pipeline. Generative world models are large-scale neural models---typically built on video diffusion or autoregressive sequence architectures---trained to synthesize plausible future observations, effectively functioning as learned simulators of environment transitions from high-dimensional inputs. By leveraging these models as high-fidelity, learned simulators, MBRL algorithms can now access robust transition dynamics that effectively mitigate compounding errors and provide near-infinite synthetic experience for offline RL optimization \citep{hafner2023dreamerv3}. The focus here is not just on building the models, but on how RL agents can best exploit them to learn superior policies.
+
+
+
+While algorithmic innovation in MBRL is our primary focus, we recognize the need for rigorous evaluation. Environments where interaction is expensive, noisy, and subject to complex dynamics provide the ultimate stress test for data efficiency and the robustness of policies learned within simulated world models \citep{akkaya2019solving}. Embodied AI systems such as robots are examples of these types of environments where accurate simulation is imperative for real--world use.  The workshop will foster rigorous debate on the MBRL pipeline, focusing on the following core areas:
+
+
+
+\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+    \item \textbf{Scalable Dynamics for MBRL:} How can we adapt high-capacity generative architectures (e.g., sequence or video models) to serve as rigorous transition dynamics models, ensuring they remain grounded and avoid compounding errors during long-horizon planning?
+
+    \item \textbf{Policy Extraction and Planning:} How do we best design RL algorithms to exploit infinite synthetic experience? What are the most effective paradigms for extracting control-relevant abstractions, improving exploration, and performing zero-shot planning within these learned simulators?
+
+    \item \textbf{Evaluating MBRL in Complex Domains:} How can policies trained purely within learned world models achieve zero-shot generalization in new, noisy environments? We will discuss how to successfully use MBRL to cross the sim-to-real gap and deploy robust policies onto physical embodied systems.
+
+\end{itemize}
+
+
+\section{Invited Speakers}
+
+We have confirmed a preliminary list of speakers representing the cutting edge of MBRL, representation learning, and applied policy optimization, available in Table \ref{tab:speaker}. 
+
+
+\begin{table}[t]
+\caption{Invited Speakers}
+\label{tab:speaker}
+\centering
+\footnotesize
+\begin{tabular}{lllll}
+\toprule
+\textbf{Name} & \textbf{Affiliation} & \textbf{Gender} & \textbf{Role/Job Title} & \textbf{Status} \\
+\midrule
+Jack Parker-Holder & DeepMind & Male & Research Scientist & Confirmed \\
+\midrule
+Danijar Hafner & TBD (ex-DeepMind) & Male & Research Scientist & Tentative \\
+\midrule
+Doina Precup & \makecell{DeepMind \& McGill University \\ \& Mila - Quebec AI Institute} & Female & \makecell{Research Leader \\ Associate Professor} & Confirmed \\
+\midrule
+Andrea Bajcsy & CMU & Female & Assistant Professor & Confirmed \\
+\midrule
+Cyrus Neary & UBC & Male & Assistant Professor & Confirmed \\
+\midrule
+% Jamie Shotton & Wayve & Male & Chief Scientist & Confirmed \\
+% Amir Zadeh & Lambda AI & Male & Staff ML Researcher & Confirmed \\
+Gaoyue (Kathy) Zhou	& New York University & Female & PhD Student & Confirmed \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\section{Tentative Schedule \& Format}
+
+\begin{wraptable}{r}{0.4\textwidth}
+\caption{Schedule of the workshop}
+\label{tab:schedule}
+\centering
+\footnotesize
+\begin{tabular}{ll}
+\toprule
+\textbf{Time} & \textbf{Event} \\
+\midrule
+9:00 - 9:15 & Opening Remarks \\
+9:15 - 10:00 & Invited Talk 1 \\
+10:00 - 10:45 & Invited Talk 2 \\
+10:45 - 11:15 & Coffee Break \& Networking \\
+11:15 - 12:00 & Invited Talk 3 \\
+12:00 - 12:30 & 3 Spotlight Talks \\
+12:30 - 13:30 & Lunch Break \\
+13:30 - 14:15 & Invited Talk 4 \\
+14:15 - 15:15 & Interactive Poster Session \\
+15:15 - 16:00 & Invited Talk 5 \\
+16:00 - 16:45 & Invited Talk 6 \\
+16:45 - 17:00 & Closing Remarks \\
+\bottomrule
+\end{tabular}
+\vspace{-2em}
+\end{wraptable}
+
+We propose a large-attendance talk format designed to maximize knowledge dissemination, interspersed with a small-group interactive poster session to foster community discussion and debate. In Table \ref{tab:schedule}, we provide a detailed schedule for our workshop day. Spotlight Talks will feature oral presentations of selected top submissions.
+
+
+
+\section{Organizers and Biographies}
+
+\textbf{Mohamad H. Danesh} (McGill University - Mila): PhD student focused on sim-to-real transfer, planning with learned models, and embodied world models. \textit{Role: Lead Organizer, coordination, and sponsorship.}
+
+\textbf{Amin Abyaneh} (McGill University - Mila): PhD student researching robust imitation learning and theoretical safety. \textit{Role: Co-organizer, speaker liaison, and coordination.}
+
+    
+\textbf{Michael Przystupa} (Vrije Universiteit Amsterdam): Postdoctoral researcher in embodied policy learning and temporal abstraction. \textit{Role: Co-organizer, speaker liaison, and coordination.}
+
+\textbf{Chenhao Li} (ETH Zurich): PhD student focusing on locomotion and hierarchical RL. \textit{Role: Co-organizer, speaker liaison, and coordination.}
+
+\textbf{Huihan Liu} (UT Austin): PhD student developing algorithms for human-in-the-loop embodied AI. \textit{Role: Co-organizer, speaker liaison, and coordination.}
+
+\textbf{Glen Berseth} (Mila - UdeM): Assistant Professor, CIFAR AI Chair. Expertise in generalist policies and embodied AI. \textit{Role: Senior Advisor.}
+
+\textbf{Stan Birchfield} (Nvidia): Principal Research Scientist. Expertise in synthetic data and sim-to-real transfer. \textit{Role: Industry Advisor.}
+
+\textbf{Hsiu-Chin Lin} (McGill University - Mila): Assistant Professor specializing in robot learning with safety guarantees. \textit{Role: Senior Advisor.}
+
+
+\section{Audience, Outreach, and Dissemination}
+Last year, about 15\% of RLC papers discussed MBRL, world models, or embodied AI, suggesting strong interest from (1) MBRL researchers, (2) generative modeling researchers exploring RL applications, and (3) applied RL practitioners working with physical systems.
+We will leverage our international network across multiple institutions (Mila, ETH Zurich, UT Austin, CMU, UBC, Vrije Universiteit Amsterdam) and industry connections (DeepMind, Nvidia) to circulate the call for contributions. We will post to various mailing lists and on social media.
+To facilitate attendee planning (as per RLC guidance), we will publish all talk titles, abstracts, and speaker bios on our website prior to the conference. Post-workshop, we will host slides and recorded talks (with permission) online.
+
+\section{Submission and Notification Plan}
+To encourage work-in-progress and future conference submissions, we will accept non-archival contributions through a double-blind review process via OpenReview (with strict organizer recusal for any conflicts of interest, including institutional affiliations) following a timeline of submissions due May 15 (AOE), notifications on May 29 (AOE), and the workshop on August 15 (AOE).
+
+
+
+
+\section{Sponsorship}
+
+We are currently in talks with Lambda AI to sponsor the workshop. This funding will be used to cover the cost of speaker registrations and/or accommodations and to provide best paper awards for outstanding contributions.
+
+\textbf{Speaker \& Organizer Diversity:} Our lineup reflects broad diversity across affiliations (bridging academia and industry), seniority (from PhD students to senior research leaders), and geography (North America and Europe). Furthermore, we proudly highlight leading female researchers on our speaker panel and remain committed to ensuring gender diversity in all presentations.
+
+\textbf{Inclusive Submission \& Presentation:} We will actively encourage submissions from diverse backgrounds through our outreach efforts.
+
+\textbf{Code of Conduct:} We will enforce a strict code of conduct to ensure a welcoming, respectful environment for all participants. This will be prominently displayed on our workshop website and communicated to all attendees.
+
+\textbf{Diverse Viewpoints:} The workshop brings together RL researchers with diverse perspectives on how to solve the core challenges of MBRL---from those focused on scaling dynamics models to those emphasizing sample-efficient policy extraction, and from theoretical RL guarantees to applied control systems. We will structure our panel and discussion sessions to ensure these different viewpoints are represented and debated constructively.
+
+
+\clearpage
+
+\bibliography{main}
+\bibliographystyle{rlj}
+
+\end{document}
+
