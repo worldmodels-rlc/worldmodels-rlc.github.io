@@ -1,0 +1,41 @@
+- id: 1
+  name: Jack Parker-Holder
+  affiliation: DeepMind
+  title: Research Scientist
+  status: Confirmed
+  bio: Research Scientist at DeepMind working at the intersection of reinforcement learning and world models.
+
+- id: 2
+  name: Danijar Hafner
+  affiliation: Research Scientist
+  title: Research Scientist
+  status: Tentative
+  bio: Creator of the DreamerV3 algorithm and a leading researcher in generative world models for reinforcement learning.
+
+- id: 3
+  name: Doina Precup
+  affiliation: DeepMind & McGill & Mila
+  title: Research Leader & Associate Professor
+  status: Confirmed
+  bio: Research Leader at DeepMind and Associate Professor at McGill University and Mila – Quebec AI Institute. A leading figure in reinforcement learning theory and practice.
+
+- id: 4
+  name: Andrea Bajcsy
+  affiliation: Carnegie Mellon University
+  title: Assistant Professor
+  status: Confirmed
+  bio: Assistant Professor at CMU working on safe and robust robot learning, human-robot interaction, and uncertainty-aware planning.
+
+- id: 5
+  name: Cyrus Neary
+  affiliation: University of British Columbia
+  title: Assistant Professor
+  status: Confirmed
+  bio: Assistant Professor at UBC researching the intersection of control theory, reinforcement learning, and formal methods for safe autonomous systems.
+
+- id: 6
+  name: Gaoyue (Kathy) Zhou
+  affiliation: New York University
+  title: PhD Student
+  status: Confirmed
+  bio: PhD student at NYU working on embodied AI, generalist robot policies, and learning from large-scale diverse data.

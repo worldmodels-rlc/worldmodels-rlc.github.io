@@ -4,7 +4,8 @@
       "Bash(cp:*)",
       "Bash(rsync:*)",
       "Bash(git add:*)",
-      "Bash(git commit -m ':*)"
+      "Bash(git commit -m ':*)",
+      "Read(//tmp/agency-jekyll-theme/_includes/**)"
     ]
   }
 }
