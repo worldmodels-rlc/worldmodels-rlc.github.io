@@ -3,7 +3,7 @@ baseurl:
 
 # Site settings
 title: RLC-WMW Workshop
-email: mohamad.danesh@mail.mcgill.ca
+email: worldmodelworkshop@gmail.com
 description: "Workshop on Model-Based Reinforcement Learning and Generative World Models @ RLC 2026"
 
 # Organizers (shown in Team section)
@@ -15,7 +15,7 @@ people:
   homepage: https://modanesh.github.io
   social:
     - title: envelope
-      url: "mailto:mohamad.danesh@mail.mcgill.ca"
+      url: "mailto:worldmodelworkshop@gmail.com"
 
 - name: Amin Abyaneh
   pic: amin_abyaneh
