@@ -13,9 +13,9 @@
                     <div class="team-member">
                         {% if member.pic != "placeholder" %}
                         {% assign pic_ext = member.pic_ext | default: "jpg" %}
-                        <img src="img/organizers/{{ member.pic }}.{{ pic_ext }}" class="img-responsive" style="width:210px;height:315px;object-fit:cover;object-position:top;border-radius:8px;margin:0 auto 20px;display:block;" alt="{{ member.name }}">
+                        <img src="img/organizers/{{ member.pic }}.{{ pic_ext }}" class="img-responsive img-circle" style="width:210px;height:210px;object-fit:cover;margin:0 auto 20px;" alt="{{ member.name }}">
                         {% else %}
-                        <div style="width:210px;height:210px;border-radius:50%;background:#378ADD;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
+                        <div style="width:210px;height:210px;border-radius:50%;background:#378ADD;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;display:block;">
                             <i class="fa fa-user fa-4x" style="color:#fff;"></i>
                         </div>
                         {% endif %}
