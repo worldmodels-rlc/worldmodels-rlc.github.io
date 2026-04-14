@@ -6,7 +6,23 @@
       "Bash(git add:*)",
       "Bash(git commit -m ':*)",
       "Read(//tmp/agency-jekyll-theme/_includes/**)",
-      "WebFetch(domain:commons.wikimedia.org)"
+      "WebFetch(domain:commons.wikimedia.org)",
+      "WebFetch(domain:modanesh.github.io)",
+      "WebSearch",
+      "WebFetch(domain:jparkerholder.github.io)",
+      "WebFetch(domain:danijar.com)",
+      "WebFetch(domain:www.cs.cmu.edu)",
+      "WebFetch(domain:www.cyrusneary.com)",
+      "WebFetch(domain:gaoyuezhou.github.io)",
+      "WebFetch(domain:mila.quebec)",
+      "WebFetch(domain:rl.cs.mcgill.ca)",
+      "Bash(curl -sL \"https://danijar.com/asset/face.jpg\" -o /home/amin/Projects/wm-workshop/img/speakers/danijar_hafner.jpg)",
+      "Bash(curl -sL \"https://rl.cs.mcgill.ca/assets/img/dprecup.jpg\" -o /home/amin/Projects/wm-workshop/img/speakers/doina_precup.jpg)",
+      "Bash(curl -sL \"https://www.cs.cmu.edu/~abajcsy/images/pic1.png\" -o /home/amin/Projects/wm-workshop/img/speakers/andrea_bajcsy.png)",
+      "Bash(curl -sL \"https://www.cyrusneary.com/images/headshot.jpg\" -o /home/amin/Projects/wm-workshop/img/speakers/cyrus_neary.jpg)",
+      "Bash(curl -sL \"https://gaoyuezhou.github.io/images/gaoyuezhou.JPG\" -o /home/amin/Projects/wm-workshop/img/speakers/gaoyue_zhou.jpg)",
+      "WebFetch(domain:scholar.google.com)",
+      "Bash(curl -sL \"https://scholar.googleusercontent.com/citations?view_op=view_photo&user=2O_ESc4AAAAJ&citpid=1\" -o /home/amin/Projects/wm-workshop/img/speakers/jack_parker_holder.jpg)"
     ]
   }
 }
