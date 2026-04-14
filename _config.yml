@@ -9,39 +9,53 @@ description: "Workshop on Model-Based Reinforcement Learning and Generative Worl
 # Organizers (shown in Team section)
 people:
 - name: Mohamad H. Danesh
-  pic: placeholder
-  position: McGill University & Mila — Lead Organizer
+  pic: mohamad_danesh
+  affiliation: McGill University & Mila
+  role: Lead Organizer
+  homepage: https://modanesh.github.io
   social:
     - title: envelope
       url: "mailto:mohamad.danesh@mail.mcgill.ca"
 
 - name: Amin Abyaneh
-  pic: placeholder
-  position: McGill University & Mila — Co-organizer
+  pic: amin_abyaneh
+  affiliation: McGill University & Mila
+  role: Co-organizer
+  homepage: https://aminabyaneh.github.io
 
 - name: Michael Przystupa
   pic: placeholder
-  position: Vrije Universiteit Amsterdam — Co-organizer
+  affiliation: Vrije Universiteit Amsterdam
+  role: Co-organizer
 
 - name: Chenhao Li
   pic: placeholder
-  position: ETH Zurich — Co-organizer
+  affiliation: ETH Zurich
+  role: Co-organizer
 
 - name: Huihan Liu
   pic: placeholder
-  position: UT Austin — Co-organizer
+  affiliation: UT Austin
+  role: Co-organizer
 
 - name: Glen Berseth
-  pic: placeholder
-  position: Mila & UdeM — Senior Advisor
+  pic: glen_berseth
+  pic_ext: png
+  affiliation: Mila & UdeM
+  role: Senior Advisor
+  homepage: https://neo-x.github.io
 
 - name: Stan Birchfield
-  pic: placeholder
-  position: Nvidia — Industry Advisor
+  pic: stan_birchfield
+  affiliation: Nvidia
+  role: Industry Advisor
+  homepage: https://cecas.clemson.edu/~stb/
 
 - name: Hsiu-Chin Lin
-  pic: placeholder
-  position: McGill University & Mila — Senior Advisor
+  pic: hsiuchin_lin
+  affiliation: McGill University & Mila
+  role: Senior Advisor
+  homepage: https://sites.google.com/site/hsiuchinlin/
 
 # Social links
 social:
