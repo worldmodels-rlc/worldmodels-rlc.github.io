@@ -287,7 +287,8 @@ header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-family: {{ site.data.template.font.primary }};
     font-size: 14px;
-    font-style: italic;
+    font-style: normal;
+    font-weight: 700;
     line-height: 20px;
 }
 
@@ -310,7 +311,8 @@ header .intro-text .intro-heading {
         margin-bottom: 25px;
         font-family: {{ site.data.template.font.primary }};
         font-size: 18px;
-        font-style: italic;
+        font-style: normal;
+        font-weight: 700;
         line-height: 24px;
     }
 
