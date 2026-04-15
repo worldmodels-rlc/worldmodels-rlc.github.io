@@ -285,19 +285,19 @@ header .intro-text {
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: {{ site.data.template.font.secondary }};
-    font-size: 22px;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 14px;
     font-style: italic;
-    line-height: 22px;
+    line-height: 20px;
 }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
-    font-size: 50px;
+    font-size: 32px;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 36px;
 }
 
 @media(min-width:768px) {
@@ -308,19 +308,19 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: {{ site.data.template.font.secondary }};
-        font-size: 40px;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 18px;
         font-style: italic;
-        line-height: 40px;
+        line-height: 24px;
     }
 
     header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
         font-family: {{ site.data.template.font.primary }};
-        font-size: 75px;
+        font-size: 40px;
         font-weight: 700;
-        line-height: 75px;
+        line-height: 44px;
     }
 }
 
@@ -331,14 +331,14 @@ section {
 section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-family: {{ site.data.template.font.secondary }};
-    font-size: 16px;
+    font-size: 14px;
     font-style: italic;
     font-weight: 400;
 }
@@ -864,3 +864,44 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+/* Actively-updating badge on Invited Speakers heading */
+.actively-updated-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    vertical-align: middle;
+    font-family: {{ site.data.template.font.secondary }};
+    font-size: 13px;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: 0.3px;
+    color: #fff;
+    background-color: #{{ site.data.template.color.primary }};
+    padding: 3px 10px 3px 7px;
+    border-radius: 20px;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    position: relative;
+    top: -3px;
+}
+
+@keyframes hourglass-flip {
+    0%,  45% { content: "⏳"; }
+    50%, 95% { content: "⌛"; }
+    100%     { content: "⏳"; }
+}
+
+.hourglass-spin {
+    display: inline-block;
+    animation: hourglass-swap 2s steps(1, end) infinite;
+    font-style: normal;
+}
+
+@keyframes hourglass-swap {
+    0%   { content: "⏳"; opacity: 1; }
+    50%  { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+
