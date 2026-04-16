@@ -13,9 +13,6 @@ people:
   affiliation: McGill University & Mila
   role: Lead Organizer
   homepage: https://modanesh.github.io
-  social:
-    - title: envelope
-      url: "mailto:worldmodelworkshop@gmail.com"
 
 - name: Amin Abyaneh
   pic: amin_abyaneh
@@ -24,19 +21,25 @@ people:
   homepage: https://aminabyaneh.github.io
 
 - name: Michael Przystupa
-  pic: placeholder
+  pic: michael_sunshine
+  pic_ext: jpeg
   affiliation: Vrije Universiteit Amsterdam
   role: Co-organizer
+  homepage: https://mi-przystupa.github.io/
 
 - name: Chenhao Li
-  pic: placeholder
+  pic: chenhao_li
+  pic_ext: png
   affiliation: ETH Zurich
   role: Co-organizer
+  homepage: https://breadli428.github.io/
 
 - name: Huihan Liu
-  pic: placeholder
+  pic: huihan_liu
+  pic_ext: png
   affiliation: UT Austin
   role: Co-organizer
+  homepage: https://huihanl.github.io/
 
 - name: Glen Berseth
   pic: glen_berseth

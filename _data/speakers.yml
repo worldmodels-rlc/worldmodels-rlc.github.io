@@ -5,6 +5,7 @@
   pic: jack_parker_holder
   pic_ext: png
   status: Confirmed
+  homepage: https://jparkerholder.github.io/
   bio: Research Scientist at Google DeepMind in the Open-Endedness team and Honorary Lecturer at University College London. His research focuses on training world models from internet-scale data to create unlimited training environments for embodied AI. He is known for leading the Genie project, a generative world model that learns interactive environments from video. He completed his DPhil at Oxford's Machine Learning Research Group.
 
 - id: 2
@@ -13,6 +14,7 @@
   title: Staff Research Scientist
   pic: danijar_hafner
   status: Tentative
+  homepage: https://danijar.com/
   bio: Staff Research Scientist at Google DeepMind in San Francisco. Creator of the Dreamer series of model-based RL agents, including DreamerV3 — a single general-purpose algorithm that masters over 150 diverse tasks without task-specific tuning, whose results were published in Nature in 2025. His work is among the most influential in learning world models for reinforcement learning.
 
 - id: 3
@@ -21,6 +23,7 @@
   title: Research Team Leader & Associate Professor
   pic: doina_precup
   status: Confirmed
+  homepage: https://doinaprecup.github.io/
   bio: Research Team Leader heading Google DeepMind's Montreal office, and Associate Professor in the School of Computer Science at McGill University and core member of Mila. Canada CIFAR AI Chair and Canada Research Chair in Machine Learning. A leading figure in reinforcement learning theory and practice, with broad contributions to temporal abstraction, representation learning, and policy optimization.
 
 - id: 4
@@ -30,6 +33,7 @@
   pic: andrea_bajcsy
   pic_ext: png
   status: Confirmed
+  homepage: https://www.cs.cmu.edu/~abajcsy/
   bio: Assistant Professor at the Robotics Institute at Carnegie Mellon University, where she directs the Interactive and Trustworthy Robotics (Intent) Lab. Her research spans robotics, machine learning, control theory, and human-AI interaction, with a focus on enabling embodied agents to reliably operate in the open world. She received her Ph.D. from UC Berkeley in 2022 and is the recipient of the NSF CAREER Award and DARPA Young Faculty Award (both 2025).
 
 - id: 5
@@ -38,6 +42,7 @@
   title: Assistant Professor
   pic: cyrus_neary
   status: Confirmed
+  homepage: https://cyrusneary.com/
   bio: Assistant Professor in the Department of Electrical and Computer Engineering at the University of British Columbia, where he directs the Artificial Intelligence in Robotics & Engineering (AIRE) Lab. His research develops theory and algorithms for scalable, reliable AI in control, robotics, and autonomous systems, with interests in multiagent reinforcement learning, physics-informed machine learning, and safe use of large language models for autonomy. He received his Ph.D. from UT Austin and was previously a postdoctoral researcher at Mila and Université de Montréal.
 
 - id: 6
@@ -46,4 +51,5 @@
   title: PhD Student
   pic: gaoyue_zhou
   status: Confirmed
+  homepage: https://gaoyuezhou.github.io/
   bio: PhD student in Computer Science at NYU Courant, advised by Lerrel Pinto and Yann LeCun. Her research focuses on robotics, reinforcement learning, and world models for planning, with an emphasis on building agents that can learn and generalize across diverse tasks. Prior to NYU, she was a Master's student at CMU's Robotics Institute working on robot generalization and benchmarking.

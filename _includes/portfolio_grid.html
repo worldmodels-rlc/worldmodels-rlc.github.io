@@ -18,7 +18,7 @@
                         </div>
                         {% assign pic_ext = speaker.pic_ext | default: "jpg" %}
                         {% if speaker.pic %}
-                        <img src="img/speakers/{{ speaker.pic }}.{{ pic_ext }}" class="img-responsive" style="width:100%;height:330px;object-fit:cover;object-position:top;" alt="{{ speaker.name }}">
+                        <img src="img/speakers/{{ speaker.pic }}.{{ pic_ext }}" class="img-responsive" style="width:100%;height:264px;object-fit:cover;object-position:top;" alt="{{ speaker.name }}">
                         {% else %}
                         <div class="speaker-card-img text-center" style="background:#378ADD; padding:40px 0;">
                             <i class="fa fa-user fa-5x" style="color:#fff;"></i>
@@ -26,7 +26,7 @@
                         {% endif %}
                     </a>
                     <div class="portfolio-caption">
-                        <h4>{{ speaker.name }}</h4>
+                        <h4>{% if speaker.homepage %}<a href="{{ speaker.homepage }}" target="_blank">{{ speaker.name }}</a>{% else %}{{ speaker.name }}{% endif %}</h4>
                         <p class="text-muted">{{ speaker.affiliation }}</p>
                     </div>
                 </div>
