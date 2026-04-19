@@ -2,7 +2,7 @@ url: https://worldmodels-rlc.github.io
 baseurl:
 
 # Site settings
-title: RLC-WMW Workshop
+title: RLC MBRL+WM Workshop
 email: worldmodelworkshop@gmail.com
 description: "Workshop on Model-Based Reinforcement Learning and Generative World Models @ RLC 2026"
 
@@ -51,7 +51,7 @@ people:
 - name: Stan Birchfield
   pic: stan_birchfield
   affiliation: Nvidia
-  role: Industry Advisor
+  role: Senior Advisor
   homepage: https://cecas.clemson.edu/~stb/
 
 - name: Hsiu-Chin Lin
