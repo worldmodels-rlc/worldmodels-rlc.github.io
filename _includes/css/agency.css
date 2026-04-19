@@ -370,6 +370,38 @@ section h3.section-subheading {
     text-transform: none;
 }
 
+.topic-card {
+    padding: 28px 22px 24px;
+    margin-bottom: 24px;
+    border: 1px solid #e8edf3;
+    border-radius: 6px;
+    background: #fff;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+    text-align: center;
+    height: 100%;
+}
+
+.topic-card:hover {
+    box-shadow: 0 4px 18px rgba(55, 138, 221, 0.12);
+    border-color: #b8d0ef;
+}
+
+.topic-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    height: 68px;
+    margin: 0 auto 18px;
+    background: #f0f6ff;
+    border-radius: 50%;
+}
+
+.topic-icon-wrap svg {
+    width: 36px;
+    height: 36px;
+}
+
 #portfolio .portfolio-item,
 #speakers .portfolio-item {
     right: 0;
