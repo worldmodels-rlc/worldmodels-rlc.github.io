@@ -317,8 +317,8 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 240px;
-        padding-bottom: 160px;
+        padding-top: 140px;
+        padding-bottom: 80px;
     }
 
     header .intro-text .intro-lead-in {
@@ -949,6 +949,29 @@ body {
     0%,  45% { content: "⏳"; }
     50%, 95% { content: "⌛"; }
     100%     { content: "⏳"; }
+}
+
+.speaker-status {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 2px 9px;
+    border-radius: 3px;
+    margin-top: 4px;
+}
+
+.speaker-status-confirmed {
+    color: #2a7a3b;
+    background: #e6f4ea;
+    border: 1px solid #b6dfc0;
+}
+
+.speaker-status-tentative {
+    color: #7a5a00;
+    background: #fdf6e3;
+    border: 1px solid #e0c96a;
 }
 
 .hourglass-spin {
