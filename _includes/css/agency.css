@@ -370,6 +370,26 @@ section h3.section-subheading {
     text-transform: none;
 }
 
+.topics-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.topics-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e8edf3;
+    font-size: 15px;
+    color: #444;
+}
+
+.topics-list li::before {
+    content: "—";
+    color: #378ADD;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
 .topic-card {
     padding: 28px 22px 24px;
     margin-bottom: 24px;
