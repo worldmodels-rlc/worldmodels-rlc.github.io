@@ -6,18 +6,18 @@
                     <h2 class="section-heading">Invited Speakers <span class="actively-updated-badge"><span class="hourglass-spin">⏳</span> actively updating</span></h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" style="display:flex; flex-wrap:wrap; justify-content:center;">
             {% for speaker in site.data.speakers %}
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    {% assign pic_ext = speaker.pic_ext | default: "jpg" %}
-                    {% if speaker.pic %}
-                    <img src="img/speakers/{{ speaker.pic }}.{{ pic_ext }}" class="img-responsive" style="width:100%;height:264px;object-fit:cover;object-position:top;" alt="{{ speaker.name }}">
-                    {% else %}
-                    <div class="speaker-card-img text-center" style="background:#378ADD; padding:40px 0;">
-                        <i class="fa fa-user fa-5x" style="color:#fff;"></i>
-                    </div>
-                    {% endif %}
-                    <div class="portfolio-caption">
+                <div class="col-sm-3" style="display:flex; justify-content:center;">
+                    <div class="team-member">
+                        {% assign pic_ext = speaker.pic_ext | default: "jpg" %}
+                        {% if speaker.pic %}
+                        <img src="img/speakers/{{ speaker.pic }}.{{ pic_ext }}" class="img-responsive img-circle" style="width:210px;height:210px;object-fit:cover;object-position:top;margin:0 auto 20px;" alt="{{ speaker.name }}">
+                        {% else %}
+                        <div style="width:210px;height:210px;border-radius:50%;background:#378ADD;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
+                            <i class="fa fa-user fa-4x" style="color:#fff;"></i>
+                        </div>
+                        {% endif %}
                         <h4>{% if speaker.homepage %}<a href="{{ speaker.homepage }}" target="_blank">{{ speaker.name }}</a>{% else %}{{ speaker.name }}{% endif %}</h4>
                         <p class="text-muted">{{ speaker.affiliation }}</p>
                         {% if speaker.status == "Confirmed" %}
