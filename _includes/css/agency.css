@@ -178,26 +178,13 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: #{{ site.data.template.color.primary }};
-    padding-top: 7px;
-    padding-bottom: 7px;
 }
 
-.navbar-default .navbar-brand img {
-    height: 36px;
-    position: static;
-    vertical-align: middle;
-}
-
-@media(min-width:768px) {
-    .navbar-default .navbar-brand {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
+@media(max-width:767px) {
     .navbar-default .navbar-brand img {
-        height: 80px;
-        position: relative;
-        top: -25px;
+        height: 34px !important;
+        position: static !important;
+        top: auto !important;
     }
 }
 
