@@ -11,34 +11,34 @@ people:
 - name: Mohamad H. Danesh
   pic: mohamad_danesh
   affiliation: McGill University & Mila
-  role: Lead Organizer
+  role: Organizer
   homepage: https://modanesh.github.io
 
 - name: Amin Abyaneh
   pic: amin_abyaneh
   affiliation: McGill University & Mila
-  role: Co-organizer
+  role: Organizer
   homepage: https://aminabyaneh.github.io
 
 - name: Michael Przystupa
   pic: michael_sunshine
   pic_ext: jpeg
   affiliation: Vrije Universiteit Amsterdam
-  role: Co-organizer
+  role: Organizer
   homepage: https://mi-przystupa.github.io/
 
 - name: Chenhao Li
   pic: chenhao_li
   pic_ext: png
   affiliation: ETH Zurich
-  role: Co-organizer
+  role: Organizer
   homepage: https://breadli428.github.io/
 
 - name: Huihan Liu
   pic: huihan_liu
   pic_ext: png
   affiliation: UT Austin
-  role: Co-organizer
+  role: Organizer
   homepage: https://huihanl.github.io/
 
 - name: Glen Berseth
