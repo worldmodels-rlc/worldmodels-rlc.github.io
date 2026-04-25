@@ -40,7 +40,7 @@
   affiliation: University of British Columbia
   title: Assistant Professor
   pic: cyrus_neary
-  status: Tentative
+  status: Confirmed
   homepage: https://cyrusneary.com/
   bio: Assistant Professor in the Department of Electrical and Computer Engineering at the University of British Columbia, where he directs the Artificial Intelligence in Robotics & Engineering (AIRE) Lab. His research develops theory and algorithms for scalable, reliable AI in control, robotics, and autonomous systems, with interests in multiagent reinforcement learning, physics-informed machine learning, and safe use of large language models for autonomy. He received his Ph.D. from UT Austin and was previously a postdoctoral researcher at Mila and Université de Montréal.
 
@@ -52,3 +52,12 @@
   pic_ext: jpeg
   status: Confirmed
   homepage: https://scholar.google.com/citations?user=MQFngiMAAAAJ&hl=en
+
+- id: 7
+  name: Michael Rabbat
+  affiliation: AMI Labs
+  title: Co-Founder & VP World Models
+  pic: michael_rabbat
+  pic_ext: jpeg
+  status: Tentative
+  homepage: https://scholar.google.com/citations?user=cMPKe9UAAAAJ&hl=en
