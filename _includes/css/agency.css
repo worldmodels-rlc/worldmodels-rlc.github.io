@@ -1014,6 +1014,83 @@ body {
     100% { opacity: 1; }
 }
 
+/* Schedule Section Styles */
+.schedule-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border: 1px solid #e8edf3;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    font-family: {{ site.data.template.font.secondary }};
+}
+
+.schedule-table thead th {
+    background: #378ADD;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-size: 13px;
+    padding: 14px 20px;
+    text-align: left;
+}
+
+.schedule-table tbody td {
+    padding: 14px 20px;
+    border-top: 1px solid #e8edf3;
+    font-size: 15px;
+    color: #444;
+    vertical-align: middle;
+}
+
+.schedule-table tbody tr:hover {
+    background: #f7fafd;
+}
+
+.schedule-time-col {
+    width: 150px;
+    white-space: nowrap;
+}
+
+.schedule-time {
+    font-weight: 600;
+    color: #222;
+    white-space: nowrap;
+}
+
+.schedule-speaker a {
+    color: #378ADD;
+    font-weight: 600;
+}
+
+.schedule-speaker a:hover {
+    text-decoration: underline;
+}
+
+.schedule-table tr.schedule-break td {
+    background: #fdf6e3;
+    color: #7a5a00;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.schedule-table tr.schedule-break:hover td {
+    background: #fbefcf;
+}
+
+.schedule-table tr.schedule-milestone td {
+    background: #eef4fb;
+    color: #2a5c8a;
+    font-weight: 600;
+}
+
+.schedule-table tr.schedule-milestone:hover td {
+    background: #e4eef9;
+}
+
 /* Sponsor Section Styles */
 .sponsor-card {
     background: #fff;

@@ -1,0 +1,48 @@
+<!-- Schedule Section -->
+<section id="schedule">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Schedule <span class="speaker-status speaker-status-tentative" style="vertical-align:middle;">Tentative</span></h2>
+                <h3 class="section-subheading text-muted">The program below is tentative and subject to change.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="table-responsive">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th class="schedule-time-col">Time</th>
+                                <th>Event</th>
+                                <th>Speaker</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for item in site.data.schedule %}
+                            {% if item.break %}
+                            <tr class="schedule-break">
+                                <td class="schedule-time">{{ item.time }}</td>
+                                <td colspan="2">{{ item.event }}</td>
+                            </tr>
+                            {% elsif item.speaker %}
+                            {% assign speaker = site.data.speakers | where: "name", item.speaker | first %}
+                            <tr>
+                                <td class="schedule-time">{{ item.time }}</td>
+                                <td>{{ item.event }}</td>
+                                <td class="schedule-speaker">{% if speaker.homepage %}<a href="{{ speaker.homepage }}" target="_blank">{{ item.speaker }}</a>{% else %}{{ item.speaker }}{% endif %}</td>
+                            </tr>
+                            {% else %}
+                            <tr class="schedule-milestone">
+                                <td class="schedule-time">{{ item.time }}</td>
+                                <td colspan="2">{{ item.event }}</td>
+                            </tr>
+                            {% endif %}
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
