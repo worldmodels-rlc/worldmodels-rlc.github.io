@@ -27,13 +27,13 @@
   bio: Research Team Leader heading Google DeepMind's Montreal office, and Associate Professor in the School of Computer Science at McGill University and core member of Mila. Canada CIFAR AI Chair and Canada Research Chair in Machine Learning. A leading figure in reinforcement learning theory and practice, with broad contributions to temporal abstraction, representation learning, and policy optimization.
 
 - id: 4
-  name: Romain Laroche
+  name: Harry Zhao
   affiliation: Wayve
-  title: Principal Applied Scientist
-  pic: romain_laroche
-  pic_ext: jpeg
+  title: Senior Research Scientist
+  pic: harry_zhao
+  pic_ext: png
   status: Confirmed
-  homepage: https://www.linkedin.com/in/romain-laroche-6282397/
+  homepage: https://pwnerharry.github.io/
 
 - id: 5
   name: Cyrus Neary
