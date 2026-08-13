@@ -7,7 +7,7 @@
   event: "Invited Talk 2"
   speaker: "Scott Fujimoto"
 - time: "10:45 – 11:15"
-  event: "Break & Networking"
+  event: "Coffee Break & Networking"
   break: true
 - time: "11:15 – 12:00"
   event: "Invited Talk 3"
